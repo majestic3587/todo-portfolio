@@ -1,8 +1,8 @@
 export type Todo = {
   id: number;
-  user_id: string | null;
-  title: string | null;
-  is_done: boolean | null;
+  user_id: string;
+  title: string;
+  is_done: boolean;
   created_at: string;
   updated_at: string | null;
 };

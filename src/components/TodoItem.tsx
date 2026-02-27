@@ -13,7 +13,7 @@ type Props = {
 export default function TodoItem({ todo, onToggle, onRename, onDelete }: Props) {
   const [isLoading, setIsLoading] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const [editTitle, setEditTitle] = useState(todo.title);
+  const [editTitle, setEditTitle] = useState<string>(todo.title ?? "");
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
